@@ -31,7 +31,12 @@ namespace ScratchMVCAngular.Tests
             var expectedMedian = calc.CalculateMedian(inputInts);
 
             double testMedian = 4;
-            Assert.AreEqual(expectedMedian, testMedian); 
+            Assert.AreEqual(expectedMedian, testMedian);
+
+            if (expectedMedian == testMedian)
+            {
+                Console.WriteLine("The VerifyMedian test has passed!");
+            }
         }
     }
 }
