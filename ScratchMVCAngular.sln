@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScratchMVCAngular", "ScratchMVCAngular\ScratchMVCAngular.csproj", "{46500A23-912C-422D-AF41-EBC49AF763E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScratchMVCAngular.Tests", "ScratchMVCAngular.Tests\ScratchMVCAngular.Tests.csproj", "{83DBDB35-E8DC-45BB-9DDF-DE8FA1C5C8D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46500A23-912C-422D-AF41-EBC49AF763E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46500A23-912C-422D-AF41-EBC49AF763E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46500A23-912C-422D-AF41-EBC49AF763E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46500A23-912C-422D-AF41-EBC49AF763E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83DBDB35-E8DC-45BB-9DDF-DE8FA1C5C8D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DBDB35-E8DC-45BB-9DDF-DE8FA1C5C8D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DBDB35-E8DC-45BB-9DDF-DE8FA1C5C8D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DBDB35-E8DC-45BB-9DDF-DE8FA1C5C8D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {417C604F-5032-4B66-A032-6E7929DC8CE1}
+	EndGlobalSection
+EndGlobal

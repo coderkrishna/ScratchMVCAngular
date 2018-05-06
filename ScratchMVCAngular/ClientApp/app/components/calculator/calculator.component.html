@@ -1,0 +1,38 @@
+<h1>Calculation Portion</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<input type="text" id="inputData" [(ngModel)]="inputData" />
+
+<p>{{inputData}}</p>
+
+<button type="submit" class="btn btn-default" (click)="getStats(inputData)">Calculate</button>
+
+<br /><br />
+
+<table class="table table-responsive table-striped">
+    <tr>
+        <th style="text-align:center">Mean</th>
+        <th style="text-align:center">Median</th>
+        <th style="text-align:center">Mode</th>
+        <th style="text-align:center">Status</th>
+        <th style="text-align:center">Status Description</th>
+    </tr>
+    <tr>
+        <td style="text-align:center">
+            {{basicStats.mean}}
+        </td>
+        <td style="text-align:center">
+            {{basicStats.median}}
+        </td>
+        <td style="text-align:center">
+            {{basicStats.mode}}
+        </td>
+        <td style="text-align:center">
+            {{basicStats.status}}
+        </td>
+        <td style="text-align:center">
+            {{basicStats.statusDesc}}
+        </td>
+    </tr>
+</table>
