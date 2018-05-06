@@ -22,5 +22,16 @@ namespace ScratchMVCAngular.Tests
                 Console.WriteLine("The VerifyMean test has passed!");
             }
         }
+
+        [TestMethod]
+        public void VerifyMedian()
+        {
+            var calc = new Operations();
+            int[] inputInts = new int[] { 1, 4, 3, 5, 6 };
+            var expectedMedian = calc.CalculateMedian(inputInts);
+
+            double testMedian = 4;
+            Assert.AreEqual(expectedMedian, testMedian); 
+        }
     }
 }

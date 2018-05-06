@@ -1,11 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using ScratchMVCAngular.Models;
 
 namespace ScratchMVCAngular.Logic
 {
     public class Operations
     {
+        public Statistics Calculate(string id)
+        {
+            string[] inputs = id.Split(',');
+            var stats = new Statistics();
+
+            try
+            {
+                int[] inputInts = Array.ConvertAll(inputs, int.Parse);
+
+                var dblAvg = CalculateAverage(inputInts);
+                var dblMed = CalculateMedian(inputInts);
+                int[] mode = CalculateMultiMode(inputInts);
+
+                stats.Mean = dblAvg;
+                stats.Median = dblMed;
+                stats.Mode = mode;
+                stats.Status = "200";
+                stats.StatusDesc = "OK";
+            }
+            catch (Exception ex)
+            {
+                stats.Mean = 0;
+                stats.Median = 0;
+                stats.Mode = new int[] { 0 };
+                stats.Status = "404";
+                stats.StatusDesc = "Cannot proceed with calculations: " + ex.Message;
+            }
+
+            return stats;
+        }
+
         public double CalculateAverage(int[] inputInts)
         {
             int sum = 0;
