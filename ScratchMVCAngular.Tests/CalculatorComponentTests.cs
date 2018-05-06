@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ScratchMVCAngular.Controllers; 
+using ScratchMVCAngular.Logic; 
 
 namespace ScratchMVCAngular.Tests
 {
@@ -10,7 +10,7 @@ namespace ScratchMVCAngular.Tests
         [TestMethod]
         public void VerifyMean()
         {
-            var calc = new CalculatorController();
+            var calc = new Operations();
             int[] inputInts = new int[] { 1, 3, 4, 2 }; 
             var expectedMean = calc.CalculateAverage(inputInts); 
         }
