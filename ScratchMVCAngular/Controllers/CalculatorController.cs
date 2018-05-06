@@ -49,7 +49,7 @@ namespace ScratchMVCAngular.Controllers
             return stats;
         }
 
-        private double CalculateAverage(int[] inputInts)
+        public double CalculateAverage(int[] inputInts)
         {
             int sum = 0;
             int size = inputInts.Length;
