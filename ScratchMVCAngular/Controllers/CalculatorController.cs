@@ -49,6 +49,12 @@ namespace ScratchMVCAngular.Controllers
             return stats;
         }
 
+        /// <summary>
+        /// The method that will calculate the average of a list of integers
+        /// which are contained in the integer array
+        /// </summary>
+        /// <param name="inputInts">The array of integers</param>
+        /// <returns>The mean, or the average of the numbers</returns>
         public double CalculateAverage(int[] inputInts)
         {
             int sum = 0;
@@ -62,6 +68,15 @@ namespace ScratchMVCAngular.Controllers
             return Convert.ToDouble(sum) / size;
         }
 
+        /// <summary>
+        /// Method that calculates the median of the list of numbers. 
+        /// The median is the middle which is the middle integer in a list
+        /// containing an odd number of elements. If the list contains
+        /// an even number of elements, the median is the average of the middle
+        /// two numbers
+        /// </summary>
+        /// <param name="inputInts">An integer array that is being analyzed</param>
+        /// <returns>The median of the list</returns>
         public double CalculateMedian(int[] inputInts)
         {
             double median;
@@ -88,6 +103,15 @@ namespace ScratchMVCAngular.Controllers
             return median;
         }
 
+        /// <summary>
+        /// The method that calculates either no mode that is denoted by 0, 
+        /// returns a single integer for the mode, or would return more than
+        /// one value for the mode in case the list contains a few integers that
+        /// occur more than once in the list. Mathematically speaking, mode means
+        /// most occurring
+        /// </summary>
+        /// <param name="inputInts">The list of integers</param>
+        /// <returns>Either no mode, one mode, or more than 2 modes</returns>
         public int[] CalculateMultiMode(int[] inputInts)
         {
             // myList is the original list of numbers
@@ -95,6 +119,8 @@ namespace ScratchMVCAngular.Controllers
             List<int> modes = new List<int>();
 
             // This creates the query
+            // and the list of numbers that are grouped by the number of times
+            // each number appears!
             var query = from numbers in myList // select the numbers
                         group numbers by numbers // group the numbers so that we get the count
                             into groupedNumbers
