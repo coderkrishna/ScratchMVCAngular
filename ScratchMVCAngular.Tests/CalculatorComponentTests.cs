@@ -19,6 +19,7 @@ namespace ScratchMVCAngular.Tests
 
             if (expectedMean == testMean)
             {
+                Console.Write($"Expected Mean: {expectedMean}" + " " + $"Test Mean: {testMean}" + Environment.NewLine);
                 Console.WriteLine("The VerifyMean test has passed!");
             }
         }
@@ -35,6 +36,7 @@ namespace ScratchMVCAngular.Tests
 
             if (expectedMedian == testMedian)
             {
+                Console.Write($"Expected Median: {expectedMedian}" + " " + $"Test Median: {testMedian}" + Environment.NewLine);
                 Console.WriteLine("The VerifyMedian test has passed!");
             }
         }
@@ -51,7 +53,7 @@ namespace ScratchMVCAngular.Tests
             for (int i = 0; i < actual.Length; i++)
             {
                 Assert.AreEqual(expected[i], actual[i]);
-                Console.WriteLine("Mode: {0}, ExpectedMode: {1}, Result: {2}", actual[i], expected[i], "YES");
+                Console.WriteLine("Mode: {0}, ExpectedMode: {1}, Result: {2}", actual[i], expected[i], actual[i] == expected[i]);
             }
 
             Console.WriteLine("The VerifyMultiMode test passed");

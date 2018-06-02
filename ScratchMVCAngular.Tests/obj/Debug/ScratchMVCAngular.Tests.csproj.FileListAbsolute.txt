@@ -122,8 +122,8 @@ D:\GitHub\ScratchMVCAngular\ScratchMVCAngular.Tests\bin\Debug\ScratchMVCAngular.
 D:\GitHub\ScratchMVCAngular\ScratchMVCAngular.Tests\bin\Debug\ScratchMVCAngular.exe.config
 D:\GitHub\ScratchMVCAngular\ScratchMVCAngular.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 D:\GitHub\ScratchMVCAngular\ScratchMVCAngular.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-D:\GitHub\ScratchMVCAngular\ScratchMVCAngular.Tests\obj\Debug\ScratchMVCAngular.Tests.csprojResolveAssemblyReference.cache
 D:\GitHub\ScratchMVCAngular\ScratchMVCAngular.Tests\obj\Debug\ScratchMVCAngular.Tests.csproj.CoreCompileInputs.cache
 D:\GitHub\ScratchMVCAngular\ScratchMVCAngular.Tests\obj\Debug\ScratchMVCAngular.Tests.csproj.CopyComplete
 D:\GitHub\ScratchMVCAngular\ScratchMVCAngular.Tests\obj\Debug\ScratchMVCAngular.Tests.dll
 D:\GitHub\ScratchMVCAngular\ScratchMVCAngular.Tests\obj\Debug\ScratchMVCAngular.Tests.pdb
+D:\GitHub\ScratchMVCAngular\ScratchMVCAngular.Tests\obj\Debug\ScratchMVCAngular.Tests.csprojAssemblyReference.cache
